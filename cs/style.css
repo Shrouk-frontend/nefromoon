@@ -1,0 +1,299 @@
+:root{
+--main-color:#161034;
+--second-color:#ffd700;
+--margin-top:5%
+
+}
+body{
+  padding-top: 1%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* navbar */
+ .navbar{
+  background-color: var(--main-color) !important;
+ }
+ .no-arrow::after{
+  display: none;
+ }
+
+.navbar a {
+  color:var(--second-color);
+}
+
+.dropdown-menu .dropdown-item {
+  color: var(--main-color);
+
+}
+
+/* home background  */
+
+.home{
+  position:relative;
+height: 100vh;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.blur-bg{
+  background-image: url(../images/pharo22.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+filter: blur(15px);
+transform: scale(1.1);
+  
+}
+.home img{
+ max-width: 90%;
+ /* max-height: 90%; */
+ z-index: 2;
+object-fit: cover;
+}
+
+.home::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-color: rgba(0, 0, 0, 0.50);
+  z-index: 4;
+}
+
+
+/* typing text h2 */
+.content{
+  min-width: 500px;
+}
+.home .icons .typing{
+  position: relative;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 2rem;
+font-weight: bold;
+color:var(--second-color);
+width: 10ch;
+overflow: hidden;
+animation: typeing 3s steps(9) forwards;
+}
+
+.home .icons h2::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top: 0%;
+  width:3px;
+  height: 100%;
+  background-color: #9e8d28;
+  animation: hide 0.1s linear 3s forwards;
+}
+
+@keyframes typeing{
+0%{
+  width: 0;
+}
+100%{
+  width:10ch;
+  
+}
+}
+@keyframes hide{
+  100%{
+    opacity: 0;
+  }
+}
+
+.pargraph-typing{
+  width: 45ch;
+  font-size: 1.125rem;
+  border-right: solid 3px white;
+  white-space: nowrap;
+  overflow: hidden;
+  color:var(--second-color);
+  animation: pargraph 3s  steps(45) forwards;
+}
+
+@keyframes pargraph{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 45;
+    border-right: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+/* eversing about the icons */
+
+.home .icons {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  z-index: 5;
+
+}
+
+/* .home .icons p{
+color:#ffd700;;
+font-size:1rem;
+} */
+.home .icons ul{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.home .icons ul li{
+  padding: 2.5px;
+  margin: 5px;
+  border: solid 1px #fff;
+  border-radius: 30%;
+} 
+
+.home .icons i{
+color:var(--second-color);
+
+}
+
+
+/* new section women  */
+.women {
+  width: 100%;
+  margin-top: var(--margin-top);
+  margin-bottom: -10%;
+  
+}
+
+
+
+
+/* content-women */
+
+.homename{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 5%;
+}
+.women .homename h3{
+  position: relative;
+  font-size:5rem;
+   color:rgba(0, 0, 0, 0.2);
+  letter-spacing:8px;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* padding: 5px 0px; */
+   
+}
+.women .homename h2{
+  position:absolute;
+  font-size:3.5rem;
+  letter-spacing:18px;
+font-weight:600;
+font-style: italic;
+  /* font-style: italic; */
+  color: #0008ff;
+  
+}
+
+/* .women #rowdata {
+  background-color: var(--second-color);
+} */
+
+.women #rowdata img{
+  width: 100%;
+  height:300px;
+  display: block;
+}
+
+.women #rowdata p{
+color: var(--main-color);
+font-size: medium;
+font-weight: 600;
+}
+
+/* section men */
+.men{
+ 
+  width: 100%;
+  margin-bottom:10%;
+}
+.men #rowdatamen img {
+  /* height:200px; */
+}
+.men .menName{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4%;
+  padding-top: 20%;
+}
+
+.men .menName h3{
+  position: relative;
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.2);
+    letter-spacing:12px;
+    /* font-style: italic; */
+}
+
+.men .menName h2{
+    position: absolute;
+      font-size: 3.8rem;
+      letter-spacing: 14px;
+      font-weight: 600;
+      /* font-style: italic; */
+      color: #0B081C;
+}
+.men #rowdatamen img{
+  height:300px;
+}
+.women .homename .btn{
+  background-color:var(--main-color) !important;
+}
+
+
+
+/* section contact */
+#Contact{
+  width: 100%;
+  /* background-color: #a0a3ff; */
+}
+#Contact .NameContact{
+  margin-bottom:4%;
+}
+#Contact h3{
+  font-weight: 900;
+  font-style: oblique;
+  padding: .3125rem 0px;
+  font-size:2rem;
+}
+#Contact .pargraph{
+font-size: 4rem;
+  font-weight: 900;
+  font-style:oblique;
+  padding-left:20px;
+}
+#Contact .row .item-content{
+  padding-left: 5%;
+}
+
+#Contact .row #bt_send{
+  margin-top: 10%;
+  color: aliceblue;
+border: 1px solid white;
+background-color: rgba(0, 0, 0, 0.90);
+border-radius:5%;
+}
+ #Contact .row #bt_send:hover{
+  color: #636364;
+
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nefromoon</title>
+</head>
+<body>
+    <link rel="stylesheet" href="cs/all.min.css">
+    <link rel="stylesheet" href="cs/bootstrap.min.css">
+    <link rel="stylesheet" href="cs/style.css">
+
+
+<main>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">NefrooMoon</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto  ">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#home">Home</a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle no-arrow" href="#women" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Women
+          </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#women">Dresses</a></li>
+             <li><a class="dropdown-item" href="#">Tops</a></li>
+              <li><a class="dropdown-item" href="#">shirts</a></li>
+        </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle no-arrow" href="#men" role="button" data-bs-toggle="dropdown" aria-expanded="false">Men
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#men">jeans</a></li>
+             <li><a class="dropdown-item" href="#">sweatshirt</a></li>
+              <li><a class="dropdown-item" href="#">shoes</a></li>
+        </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle no-arrow" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Children
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">jeans</a></li>
+             <li><a class="dropdown-item" href="#">sweatshirt</a></li>
+              <li><a class="dropdown-item" href="#">shoes</a></li>
+        </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">New Arrivals</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#Conact">Conact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME    -->
+<header class="home" id="home">
+<div class="blur-bg"></div>
+<img src="images/pharo22.jpg" alt="">
+
+<div class="icons">
+  <div class="content"> 
+    <h2 class="typing">NefrooMoon</h2>
+   <div> <p class="pargraph-typing text-capitalize fst-italic" id="pargraph">our colors,like the nile and the sun remain eternal</p></div>
+   
+  </div>
+
+  <ul class="list-unstyled">
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#whats"><i class="fa-brands fa-square-whatsapp"></i></a>
+          </li>
+        </ul>
+ </div>
+</header>
+<!-- new section about women -->
+ <section class="women" id="women">
+<div class="container-fluid">
+    <div class="homename">
+        <h3>Women</h3>
+      <h2>Women</h2>
+    </div>
+  <div class="row g-4" id="rowdata">
+  </div>
+</div>
+</section>
+
+<!-- section men -->
+
+
+
+
+
+<section class="men" id="#men">
+  <div class="container-fluid">
+    <div class="menName">
+      <h3>Men</h3>
+      <h2>Men</h2>
+    </div>
+    <div class="row g-4 " id="rowdatamen">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="Contact">
+  <div class="container-fluid">
+<div class="NameContact text-center"><h3>Contact Us</h3></div>
+
+<div class="row g-4">
+  
+  <div class="col col-12 col-lg-6">
+    <div class="item">
+      <img src="images/item-1.jpg" class="w-100 " alt="">
+    </div>
+  </div>
+    <div class="col col-12 col-lg-5 ">
+      <p class="pargraph">We're here to help</p>
+    <div class="item item-content">
+   <div class="form-floating mb-3">
+  <input oninput="valdationName()" type="text" class="form-control" id="fullName" placeholder="FullName">
+  <label for="fullName">Full Name</label>
+</div>
+<div class="form-floating mb-3">
+  <input oninput="valdationemail()" type="email" class="form-control" id="email" placeholder="name@example.com">
+  <label for="email">Emaill Address</label>
+</div>
+<div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="teaxtErea" style="height: 100px"></textarea>
+  <label for="teaxtErea">Let us know how we can help?</label>
+</div>
+    </div>
+    <button class="btn" id="bt_send">Send Message</button>
+</div>
+
+
+  </div>
+  </div>
+</section>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasLabel">CART</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" id="btn_close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="details-item" id="details-item">
+
+      </div>
+   </div>
+</div>
+
+</main>
+
+
+    <script src="jv/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
